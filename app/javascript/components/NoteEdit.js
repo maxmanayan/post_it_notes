@@ -5,7 +5,8 @@ const NoteEdit = (props) => {
     <div>
       <h1>Edit Note</h1>
 
-      <form>
+      <form action={`/notes/${props.note.id}`} method='post'>
+        <input type='hidden' name="_method" value="patch" />
         <p>Title</p>
         <input defaultValue={props.note.title} type='text' name='note[title]' />
 

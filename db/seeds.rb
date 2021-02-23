@@ -18,4 +18,4 @@ Note.destroy_all
   )
 end
 
-puts "Seeded you have #{Note.all.size} pages"
+puts "You have #{Note.all.size} pages"
