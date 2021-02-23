@@ -13,8 +13,8 @@ Note.destroy_all
 
 10.times do
   Note.create(
-    title: Faker::Name.name,
-    description: Faker::Hacker.say_something_smart,
+    title: Faker::Company.name,
+    description: Faker::Company.bs,
   )
 end
 
