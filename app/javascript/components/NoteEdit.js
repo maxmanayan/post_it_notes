@@ -1,19 +1,21 @@
 import React from "react";
 
-const NoteEdit = () => {
+const NoteEdit = (props) => {
   return(
     <div>
       <h1>Edit Note</h1>
 
-      <p>Title</p>
-      <input name='note[title]' />
+      <form>
+        <p>Title</p>
+        <input defaultValue={props.note.title} type='text' name='note[title]' />
 
-      <p>Description</p>
-      <textarea name='note[description]' />
+        <p>Description</p>
+        <textarea defaultValue={props.note.description} type='text' name='note[description]' />
 
-      <hr/>
-      <button type='submit'>Submit</button>
-      <a href={/notes/}>Cancel</a>
+        <hr/>
+        <button type='submit'>Submit</button>
+        <a href={/notes/}>Cancel</a>
+      </form>
     </div>
   )
 }

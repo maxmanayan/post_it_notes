@@ -25,7 +25,8 @@ class NotesController < ApplicationController
   end
 
   def edit
-    render component: "NoteEdit"
+    @note = Note.find(params[:id])
+    render component: "NoteEdit", props: {note: @note}
   end
 
   def update
