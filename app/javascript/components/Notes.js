@@ -4,19 +4,20 @@ const Notes = (props) => {
   const renderNotes = () => {
     return props.notes.map( note => {
       return(
-        <div class="post_it_note">
+        <div className="post_it_note">
           <h3>{note.title}</h3>
           <p>ID: {note.id}</p>
           <hr/>
           <p>{note.description}</p>
           <a href={`/notes/${note.id}`}>View</a>
+          <a href={`/notes/${note.id}/edit`}>Edit</a>
         </div>
       )
     })
   }
 
   return(
-    <div>
+    <div className="main_background">
       <h1>Post It Notes</h1>
       <a href='/notes/new'>Create New Note</a>
       {renderNotes()}

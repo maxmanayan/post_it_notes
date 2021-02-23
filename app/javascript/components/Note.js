@@ -8,6 +8,7 @@ const Note = (props) => {
       <hr/>
       <p>{props.note.description}</p>
       <a href={/notes/}>Go Back</a>
+      <a href={`/notes/${props.note.id}/edit`}>Edit</a>
     </div>
   )
 };
