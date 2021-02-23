@@ -5,7 +5,7 @@ const NoteNew = (props) => {
     <div>
       <h1>Create a New Note</h1>
       
-      <form >
+      <form action='/notes/' method='post'>
         <p>Title</p>
         <input name='note[title]' />
 
