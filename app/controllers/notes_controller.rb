@@ -30,14 +30,17 @@ class NotesController < ApplicationController
   end
 
   def update
-    note = Note.find(params[:id])
+    @note = Note.find(params[:id])
 
-    note.update(note_params)
+    @note.update(note_params)
     redirect_to notes_path
   end
 
   def destroy
+    @note = Note.find(params[:id])
 
+    @note.destroy
+    redirect_to notes_path
   end
 
   private
