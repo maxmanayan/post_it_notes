@@ -9,6 +9,8 @@
 
 require "faker"
 
+Note.destroy_all
+
 10.times do
   Note.create(
     title: Faker::Name.name,

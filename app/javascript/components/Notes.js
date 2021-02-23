@@ -4,7 +4,7 @@ const Notes = (props) => {
   const renderNotes = () => {
     return props.notes.map( note => {
       return(
-        <div>
+        <div class="post_it_note">
           <h3>{note.title}</h3>
           <p>ID: {note.id}</p>
           <hr/>
