@@ -7,7 +7,7 @@ const Notes = (props) => {
         <div className="post_it_note">
           <section className="post_it_note_content">
             <h3>{note.title}</h3>
-            <p>ID: {note.id}</p>
+            {/* <p>ID: {note.id}</p> */}
             <hr/>
             <p>{note.description}</p>
            

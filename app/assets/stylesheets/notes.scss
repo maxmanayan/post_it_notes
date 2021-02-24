@@ -3,15 +3,10 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 .main_background {
-  // display: flex;
-  // flex-direction: column;
-
   background-color: ivory;
   min-height: 100vh;
 
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-
-  // margin: 0;
 }
 
 .notes_background {
@@ -49,7 +44,7 @@ header a {
   font-size: 1.5em;
   height: fit-content;
 
-  background: sienna;
+  background: skyblue;
   border-radius: 50%;
   color: white;
 }
@@ -61,12 +56,9 @@ header a {
 
   padding: 1rem;
 
-  // position: relative;
   display: grid;
 
-  
-  // place-items: center;
-//  padding-top: 100%;
+  box-shadow: 1px 2px gainsboro;
 }
 
 .post_it_note::before {
@@ -74,34 +66,16 @@ header a {
   padding-top: 100%;
 
   display: block;
-  // background: red;
+  
   grid-area: 1 / 1 / 2 / 2;
 }
 
 .post_it_note_content {
-  // display: none;
-  // max-width: 2.5vw;
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
   flex-direction: column;
-  
-  
-  // background: green;
-  
 }
 
-
-// .post_it_note_content {
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-
-  
-//   background: green;
-
-// }
 
 
 .post_it_note_options {

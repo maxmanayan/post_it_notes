@@ -16,10 +16,6 @@ class NotesController < ApplicationController
   end
 
   def create
-    # title = params[:note][:title]
-    # description = params[:note][:description]
-
-    # Note.create(title: title, description: description)
     Note.create(note_params)
     redirect_to notes_path
   end
