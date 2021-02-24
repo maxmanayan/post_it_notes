@@ -3,8 +3,14 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 .main_background {
-  background-color: gray;
+  // display: flex;
+  // flex-direction: column;
+
+  background-color: aliceblue;
   min-height: 100vh;
+
+
+  // margin: 0;
 }
 
 .notes_background {
@@ -13,8 +19,38 @@
   gap: 1rem;
   
   margin: 2rem;
-  background-color: gray;
+  background-color: aliceblue;
 }
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  margin: 2em;
+  align-items: center;
+
+}
+
+
+header h1 {
+  font-size: 2.5em;
+}
+
+
+header a {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  margin-left: 3em;
+  padding: 10px;
+  font-size: 1.5em;
+  height: fit-content;
+
+  background: gray;
+  border-radius: 50%;
+  color: white;
+}
+
 
 
 .post_it_note {
@@ -24,6 +60,8 @@
 
   // position: relative;
   display: grid;
+
+  
   // place-items: center;
 //  padding-top: 100%;
 }
@@ -41,6 +79,8 @@
   // display: none;
   // max-width: 2.5vw;
   grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  flex-direction: column;
   
   
   // background: green;
@@ -66,5 +106,11 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+
   
+  
+}
+
+.post_it_note_options a {
+  text-decoration: none;
 }
