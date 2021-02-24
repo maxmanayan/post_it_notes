@@ -6,9 +6,10 @@
   // display: flex;
   // flex-direction: column;
 
-  background-color: aliceblue;
+  background-color: ivory;
   min-height: 100vh;
 
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 
   // margin: 0;
 }
@@ -19,7 +20,7 @@
   gap: 1rem;
   
   margin: 2rem;
-  background-color: aliceblue;
+  background-color: ivory;
 }
 
 header {
@@ -32,7 +33,9 @@ header {
 
 
 header h1 {
-  font-size: 2.5em;
+  font-size: 3em;
+  color: red;
+  font-family:'Courier New', Courier, monospace;
 }
 
 
@@ -46,7 +49,7 @@ header a {
   font-size: 1.5em;
   height: fit-content;
 
-  background: gray;
+  background: darkgray;
   border-radius: 50%;
   color: white;
 }
@@ -54,7 +57,7 @@ header a {
 
 
 .post_it_note {
-  background-color: yellow;
+  background-color: rgb(255, 255, 109);
 
   padding: 1rem;
 
@@ -113,4 +116,6 @@ header a {
 
 .post_it_note_options a {
   text-decoration: none;
+  color:gray;
+  font-weight: bolder;
 }

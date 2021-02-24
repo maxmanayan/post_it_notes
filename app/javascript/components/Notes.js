@@ -27,7 +27,8 @@ const Notes = (props) => {
     <div> 
       <body className="main_background">
         <header>
-          <h1>Post It Notes</h1>
+          <h1>📝Post It Notes</h1> 
+          {/* <h1>✍️Post It Notes</h1> */}
           <a href='/notes/new'>Create New Note</a>
         </header>
         <div className="notes_background">
