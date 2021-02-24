@@ -1,3 +1,70 @@
 // Place all the styles related to the notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.main_background {
+  background-color: gray;
+  min-height: 100vh;
+}
+
+.notes_background {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  
+  margin: 2rem;
+  background-color: gray;
+}
+
+
+.post_it_note {
+  background-color: yellow;
+
+  padding: 1rem;
+
+  // position: relative;
+  display: grid;
+  // place-items: center;
+//  padding-top: 100%;
+}
+
+.post_it_note::before {
+  content: "";
+  padding-top: 100%;
+
+  display: block;
+  // background: red;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.post_it_note_content {
+  // display: none;
+  // max-width: 2.5vw;
+  grid-area: 1 / 1 / 2 / 2;
+  
+  
+  // background: green;
+  
+}
+
+
+// .post_it_note_content {
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+
+  
+//   background: green;
+
+// }
+
+
+.post_it_note_options {
+  // background: blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  
+}
